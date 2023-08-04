@@ -6,7 +6,8 @@ resource "aws_s3_bucket" "example" {
   acl = "private"
   versioning {
     enabled = true
-  }tags = {
+  }
+tags = {
     Environment = "test"
   }
 }
